@@ -8,7 +8,7 @@ const LandingPage = () => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2,
+        staggerChildren: 0.25,
       },
     },
   };
@@ -20,12 +20,12 @@ const LandingPage = () => {
 
   return (
     <motion.div
-      className="mx-4 my-4 flex h-full flex-col"
+      className="flex h-full flex-col"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <div className="flex-grow bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 py-20 text-center text-white">
+      <div className="flex-grow bg-gradient-to-r from-sky-800 via-emerald-800 to-sky-800 pb-20 text-center text-white">
         <motion.h2
           className="text-4xl font-bold sm:text-6xl lg:text-8xl"
           variants={itemVariants}
@@ -33,7 +33,7 @@ const LandingPage = () => {
           Welcome to SSG
         </motion.h2>
         <motion.p
-          className="mt-4 text-xl sm:text-2xl lg:text-3xl"
+          className="mt-4 flex h-auto justify-center text-xl sm:text-2xl lg:text-3xl"
           variants={itemVariants}
         >
           Replace + Rename With Rebranding
@@ -44,11 +44,14 @@ const LandingPage = () => {
         className="flex-grow bg-transparent p-6 text-white"
         variants={containerVariants}
       >
-        <motion.h2 className="mb-6 text-2xl font-bold" variants={itemVariants}>
+        <motion.h2
+          className="mb-6 w-40 rounded-3xl bg-sky-800 text-center text-2xl font-bold text-white"
+          variants={itemVariants}
+        >
           Who We Are
         </motion.h2>
 
-        <motion.p className="mb-4" variants={itemVariants}>
+        <motion.p className="mb-4 text-xl" variants={itemVariants}>
           We are an ambitious collective of coders from Colgate University,
           united by a shared passion for the vast and evolving realm of web
           development and machine learning. As we immerse ourselves in the
@@ -57,7 +60,7 @@ const LandingPage = () => {
           understanding.
         </motion.p>
 
-        <motion.p className="mb-4" variants={itemVariants}>
+        <motion.p className="mb-4 text-xl" variants={itemVariants}>
           We believe in the power of collaboration and diverse perspectives.
           Each of us brings a unique approach to problem-solving and, together,
           we can navigate the most complex challenges and projects. Our mission
@@ -68,20 +71,26 @@ const LandingPage = () => {
           and relentless pursuit of knowledge.
         </motion.p>
 
-        <motion.h2 className="mb-6 text-2xl font-bold" variants={itemVariants}>
+        <motion.h2
+          className="mb-6 mt-6 w-40 rounded-full bg-emerald-800 text-center text-2xl font-bold text-white"
+          variants={itemVariants}
+        >
           Our Projects
         </motion.h2>
-        <motion.p className="mb-4" variants={itemVariants}>
+        <motion.p className="mb-4 text-xl" variants={itemVariants}>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.
         </motion.p>
 
-        <motion.h2 className="mb-6 text-2xl font-bold" variants={itemVariants}>
+        <motion.h2
+          className="mb-6 w-28 rounded-full bg-sky-800 text-center text-2xl font-bold text-white"
+          variants={itemVariants}
+        >
           Join Us
         </motion.h2>
-        <motion.p className="mb-4" variants={itemVariants}>
+        <motion.p className="mb-4 text-xl" variants={itemVariants}>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta
