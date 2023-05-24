@@ -72,7 +72,7 @@ const LandingPage = () => {
         variants={containerVariants}
       >
         <motion.h2
-          className="mb-6 w-40 rounded-3xl bg-sky-800 text-center text-2xl font-bold text-white"
+          className="mb-6 w-40 rounded-3xl bg-slate-800 text-center text-2xl font-bold text-white"
           variants={itemVariants}
         >
           Who We Are
@@ -99,7 +99,7 @@ const LandingPage = () => {
         </motion.p>
 
         <motion.h2
-          className="mb-6 mt-6 w-40 rounded-full bg-emerald-800 text-center text-2xl font-bold text-white"
+          className="mb-6 mt-6 w-40 rounded-full bg-slate-800 text-center text-2xl font-bold text-white"
           variants={itemVariants}
         >
           Our Projects
@@ -112,7 +112,7 @@ const LandingPage = () => {
         </motion.p>
 
         <motion.h2
-          className="mb-6 w-28 rounded-full bg-sky-800 text-center text-2xl font-bold text-white"
+          className="mb-6 w-28 rounded-full bg-slate-800 text-center text-2xl font-bold text-white"
           variants={itemVariants}
         >
           Join Us
