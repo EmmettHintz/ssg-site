@@ -98,7 +98,7 @@ const LandingPage = () => {
         </motion.p>
         <Link href="/contact" passHref>
           <motion.button
-            className="mt-6 rounded-2xl bg-blue-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            className="mt-6 rounded-2xl bg-emeralnd-800 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
             variants={itemVariants}
           >
             Contact Us
