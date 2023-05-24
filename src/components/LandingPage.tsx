@@ -72,7 +72,7 @@ const LandingPage = () => {
         variants={containerVariants}
       >
         <motion.h2
-          className="mb-6 w-40 rounded-3xl bg-slate-800 text-center text-2xl font-bold text-white"
+          className="mb-6 w-40 rounded-3xl bg-sky-500 text-center text-2xl font-bold text-white"
           variants={itemVariants}
         >
           Who We Are
@@ -99,7 +99,7 @@ const LandingPage = () => {
         </motion.p>
 
         <motion.h2
-          className="mb-6 mt-6 w-40 rounded-full bg-slate-800 text-center text-2xl font-bold text-white"
+          className="mb-6 mt-6 w-40 rounded-full bg-sky-500 text-center text-2xl font-bold text-white"
           variants={itemVariants}
         >
           Our Projects
@@ -112,7 +112,7 @@ const LandingPage = () => {
         </motion.p>
 
         <motion.h2
-          className="mb-6 w-28 rounded-full bg-slate-800 text-center text-2xl font-bold text-white"
+          className="mb-6 w-28 rounded-full bg-sky-500 text-center text-2xl font-bold text-white"
           variants={itemVariants}
         >
           Join Us
@@ -125,7 +125,7 @@ const LandingPage = () => {
         </motion.p>
         <Link href="/contact" passHref>
           <motion.button
-            className="mt-6 rounded-2xl bg-emerald-800 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            className="mt-6 rounded-2xl bg-sky-500 px-4 py-2 text-white transition-colors duration-300 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
             variants={itemVariants}
           >
             Contact Us
