@@ -1,7 +1,27 @@
+import { useContext, useEffect } from "react";
+import { MyThemeContext } from "~/context/themeContext";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const LandingPage = () => {
+  const { theme, toggleTheme } = useContext(MyThemeContext);
+  const isDarkMode = theme === "dark";
+
+  const backgroundClass = isDarkMode ? "bg-[#333]" : "bg-white";
+
+  const backgroundColor = isDarkMode ? "#333" : "white";
+  const textColor = isDarkMode ? "text-white" : "text-black";
+  const buttonBackgroundColor = isDarkMode ? "bg-white" : "bg-gray-600";
+  const buttonTextColor = isDarkMode ? "text-black" : "text-white";
+  const buttonHoverColor = isDarkMode
+    ? "hover:bg-gray-200"
+    : "hover:bg-gray-800";
+
+  useEffect(() => {
+    document.body.style.backgroundColor = backgroundColor;
+  }, [backgroundColor]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -20,12 +40,19 @@ const LandingPage = () => {
 
   return (
     <motion.div
-      className="flex h-full flex-col"
+      className={`flex h-full flex-col ${backgroundClass} ${textColor}`}
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
-      <div className="flex-grow bg-gradient-to-r from-sky-800 via-emerald-800 to-sky-800 pb-20 text-center text-white">
+      <button
+        onClick={toggleTheme}
+        className={`absolute right-0 top-0 m-4 rounded ${buttonBackgroundColor} ${buttonHoverColor} ${buttonTextColor} px-3 py-2`}
+      >
+        {isDarkMode ? <FaSun /> : <FaMoon />}
+      </button>
+
+      <div className={`flex-grow pb-20 text-center ${textColor}`}>
         <motion.h2
           className="text-4xl font-bold sm:text-6xl lg:text-8xl"
           variants={itemVariants}
@@ -41,7 +68,7 @@ const LandingPage = () => {
       </div>
 
       <motion.div
-        className="flex-grow bg-transparent p-6 text-white"
+        className={`flex-grow p-6 ${textColor}`}
         variants={containerVariants}
       >
         <motion.h2
