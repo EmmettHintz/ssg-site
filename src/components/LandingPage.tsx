@@ -25,7 +25,7 @@ const LandingPage = () => {
       initial="hidden"
       animate="visible"
     >
-      <div className="flex-grow bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 py-20 text-center text-slate-800">
+      <div className="flex-grow bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 py-20 text-center text-white">
         <motion.h2
           className="text-4xl font-bold sm:text-6xl lg:text-8xl"
           variants={itemVariants}
@@ -41,7 +41,7 @@ const LandingPage = () => {
       </div>
 
       <motion.div
-        className="flex-grow bg-white p-6"
+        className="flex-grow bg-transparent p-6 text-white"
         variants={containerVariants}
       >
         <motion.h2 className="mb-6 text-2xl font-bold" variants={itemVariants}>
