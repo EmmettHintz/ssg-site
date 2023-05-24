@@ -1,11 +1,8 @@
 import { type NextPage } from "next";
-import { Main } from "next/document";
 import Head from "next/head";
-import Link from "next/link";
 
 import LandingPage from "~/components/LandingPage";
 
-import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
 
