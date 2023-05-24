@@ -2,7 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
-    background-color: #333;
+/* Light mode */
+body.light-mode {
+  --background-color: white;
+  --text-color: black;
+  --primary-color: skyblue;
+  --secondary-color: darkblue;
+  /* Add other variables as needed */
+}
+
+/* Dark mode */
+body.dark-mode {
+  --background-color: black;
+  --text-color: white;
+  --primary-color: darkblue;
+  --secondary-color: skyblue;
+  /* Add other variables as needed */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Then in your other css classes you can use these variables */
+
+.container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Example usage */
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.secondary-button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
