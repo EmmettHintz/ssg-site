@@ -51,7 +51,6 @@ const LandingPage = () => {
       >
         {isDarkMode ? <FaSun /> : <FaMoon />}
       </button>
-
       <div className={`flex-grow pb-20 text-center ${textColor}`}>
         <motion.h2
           className="text-4xl font-bold sm:text-6xl lg:text-8xl"
